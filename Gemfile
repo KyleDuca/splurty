@@ -33,6 +33,8 @@ group :doc do
 
 end
 
+gem 'sprockets', '2.11.0'
+
 gem 'bootstrap', '~> 4.0.0.alpha6'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
