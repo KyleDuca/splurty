@@ -1,5 +1,103 @@
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+
+
+header {
+  border-top: 9px solid #222222;
+  font-family: 'Play', sans-serif;
+}
+
+
+h1 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+
+h2 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  font-style: italic;
+}
+
 .clear {
   clear: both;
+}
+
+.circle {
+    font-weight:bold;
+    font-style: italic;
+    position: relative;
+    border-radius: 100%;
+    background: #1f5fc6;
+    border: 1px solid #F7F7F7;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    transform:rotate(340deg);
+    -ms-transform:rotate(340deg); /* IE 9 */
+    -webkit-transform:rotate(340deg); /* Opera, Chrome, and Safari */
+}
+
+.logo:hover {
+  text-decoration: none;
+
+}
+
+
+.slogan {
+  font-family: "open_sansregular", sans-serif;
+  font-size: 26px;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 22px;
+}
+
+.links a {
+  color: black;
+  font-size: 18px;
+  border-bottom: 1px solid #336699;
+  font-family: "open_sansregular";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.hr {
+  clear:both;
+}
+
+.next-quote {
+  font-family: "open_sansregular", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  text-decoration-color: #f84342;
+  color:#f84342;
+}
+
+.next-quote:hover {
+  text-decoration: none;
+}
+
+
+.footer-blurb {
+  font-family: "open_sansregular", sans-serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
 }

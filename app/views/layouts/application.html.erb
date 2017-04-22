@@ -9,22 +9,61 @@
 <body>
 
   <header class="row">
-    <div class="col-3">
-    Cyberpunk
+    <div class="col-3">  
+      <%= link_to root_path, class: 'logo' do %>  
+        <div class="circle">
+          <br />
+          Cyberpunk
+          <br />
+          Neon
+          <br />
+          Dystopia
+        </div>
+      <% end %>
     </div>
-    <dic class="col-4">
+    <div class="col-4 slogan">
     Taking over Science Fiction since the 1980s.
     </div>
-    <div class="col-5">
-      <%= link_to 'Contribute', '#' %>
+
+
+
+    <div class="col-5 links">
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
+
   </header>
+
+  <hr />
 
   <br class="clear" />
 
+  <div class="container">
+  <% if flash[:error].present? %>
+    <div class="col-10 offset-1 alert alert-danger">
+      <%= flash[:error].html_safe %>
+    </div>
+  <% end %>
 
-<%= yield %>
+    <%= yield %>
+
+  </div>
+
+  <div class="footer">
+    <div class ="container">
+      <div class="row"> 
+        <div class="col-6">
+          <%= link_to "This isn't enought, I need more.", root_path, class: 'next_quote' %>
+        </div>
+
+        <div class="col-6 footer-blurb">
+        Proudly made by <a href="insert link here">Kyle Duca</a><br />
+        Want to hire me? Please <a href="mailto:kyleduca@gmail.com"> contact me.</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
